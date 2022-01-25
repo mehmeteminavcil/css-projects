@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #f1e6de;
+}
+
+label {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+label::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  border-radius: 4px;
+  background: #777;
+}
+
+label input {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+label input:checked ~ label {
+  background: red;
+}
+
+label input:checked ~ .box {
+  left: 60px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+label input:checked ~ .box > svg {
+  fill: #00ffe2;
+  -webkit-filter: drop-shadow(0 0 4px #00ffe2);
+          filter: drop-shadow(0 0 4px #00ffe2);
+}
+
+label .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  border: 1px solid #f1f1f1;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(255, 255, 255, 0.4);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f1f1f1;
+}
+
+label .box svg {
+  font-size: 2em;
+  fill: #ff0000;
+  -webkit-filter: drop-shadow(0 0 4px #ff0000);
+          filter: drop-shadow(0 0 4px #ff0000);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* #00ffe2*/
+/*# sourceMappingURL=style.css.map */
