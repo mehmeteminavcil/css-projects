@@ -102,7 +102,7 @@ nav .fas {
 
 @media (max-width: 700px) {
     html {
-        font-size: 10px;
+        font-size: 14px;
     }
     .nav-links {
         position: absolute;
